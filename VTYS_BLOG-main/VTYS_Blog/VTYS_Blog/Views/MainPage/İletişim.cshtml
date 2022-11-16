@@ -1,0 +1,159 @@
+﻿
+@{
+    ViewBag.Title = "İletişim";
+    Layout = "~/Views/MainPage/Menu_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- body -->
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="~/1forms/anasayfa/images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    
+    <!-- end header -->
+    <div class="contact-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contactheading">
+                        <h3>Bizimle İletişime Geçin</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section -->
+    <section class="layout_padding">
+        <div class="container">
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full comment_form">
+                        <form action="index.html">
+                            <fieldset>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" placeholder="İsim" required="#" />
+                                            <input type="email" name="email" placeholder="Email" required="#" />
+                                            <input type="text" name="subject" placeholder="Konu" required="#" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <textarea class="wdt" placeholder="Yorum"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row margin_top_30">
+                                        <div class="col-md-12">
+                                            <div class="center">
+                                                <button>Gönder</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#"><img src="" alt="#logo" /></a>
+                    <ul class="contact_information">
+                        <li><span><img src="~/1forms/anasayfa/images/location_icon.png" alt="#" /></span><span class="text_cont">Elazığ<br>Türkiye</span></li>
+                        <li><span><img src="~/1forms/anasayfa/images/phone_icon.png" alt="#" /></span><span class="text_cont">0312 255 5500<br>0(507) 789 7855</span></li>
+                        <li><span><img src="~/1forms/anasayfa/images/mail_icon.png" alt="#" /></span><span class="text_cont">deneme@gmail.com<br>destek@gmail.com</span></li>
+                    </ul>
+                    <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer_links">
+                        <h3>Hızlı Erişim</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Anasayfa</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Deneme link</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Deneme link</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Satın Alma</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Blog</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Deneme link</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_links">
+                        <h3>Instagram</h3>
+                        <ol>
+                            <li><img class="img-responsive" src="" alt="#" /></li>
+                            <li><img class="img-responsive" src="" alt="#" /></li>
+                            <li><img class="img-responsive" src="" alt="#" /></li>
+                            <li><img class="img-responsive" src="" alt="#" /></li>
+                        </ol>
+                    </div>
+                </div>
+                @*<div class="col-lg-3 col-md-6">
+            <div class="footer_links">
+                <h3>Bizimle İletişim Kurun</h3>
+                <form action="index.html">
+                    <fieldset>
+                        <div class="field">
+                            <input type="text" name="name" placeholder="İsim" required="" />
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="Email" required="" />
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Konu" required="" />
+                        </div>
+                        <div class="field">
+                            <textarea placeholder="Mesaj"></textarea>
+                        </div>
+                        <div class="field">
+                            <div class="center">
+                                <button class="reply_bt">Gönder</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>*@
+            </div>
+        </div>
+        </footer>
+       
+
+        <script>// This example adds a marker to indicate the position of Bondi Beach in Sydney,
+      // Australia.
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: {lat: 40.645037, lng: -73.880224},
+          });
+
+        var image = '~/1forms/anasayfa/images/maps-and-flags.png';
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 40.645037, lng: -73.880224},
+          map: map,
+          icon: image
+        });
+      }</script>
+
+</body>
+</html>
